@@ -1,5 +1,5 @@
 
-describe.only('Parametrized test for "Using the Grid" form', ()=>{
+describe('Parametrized test for "Using the Grid" form', ()=>{
 
     const formCheck = [{email:'YuliiaPetrenko@gmail.com', password:'Mother'},{email:'AnnaPetrenko@gmail.com', password:'Dauther'}, {email:'DaniilPetrenko@gmail.com', password:'Son'}];
   
