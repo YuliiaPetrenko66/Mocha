@@ -1,9 +1,9 @@
 
 describe.only('Parametrized test for "Using the Grid" form', ()=>{
 
-    const tests = [{email:'YuliiaPetrenko@gmail.com', password:'Mother'},{email:'AnnaPetrenko@gmail.com', password:'Dauther'}, {email:'DaniilPetrenko@gmail.com', password:'Son'}];
+    const formCheck = [{email:'YuliiaPetrenko@gmail.com', password:'Mother'},{email:'AnnaPetrenko@gmail.com', password:'Dauther'}, {email:'DaniilPetrenko@gmail.com', password:'Son'}];
   
-    tests.forEach(({email,password}) => {
+    formCheck.forEach(({email,password}) => {
       it(`Test for text form "${email}"`, () => { 
         cy.visit('https://sanitarskyi-ngx-admin.herokuapp.com/');
         cy.get('[src="assets/images/material-dark-theme.jpg"]').click();
